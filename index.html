@@ -1,64 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The home for ACNE Information</title>
+    <script defer src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The home for ACNE Information</title>
-  <script defer src="script.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-</head>
-
-<body class="bg-body-tertiary">
-  <!--Header container-->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Buying guides
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Article 1</a></li>
-                <li><a class="dropdown-item" href="#">Article 2</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Latest Article</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Soruces</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+  <body class="bg-body-tertiary">
+    <!--Header container-->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Buying guides
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Article 1</a></li>
+                  <li><a class="dropdown-item" href="#">Article 2</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Latest Article</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Soruces</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!--Main container-->
-  <main>
-    <div class="container-fluid top-100" style="
+    <!--Main container-->
+    <main>
+      <div
+        class="container-fluid top-100"
+        style="
           background: linear-gradient(
             to bottom,
             #198754 0%,
@@ -66,179 +91,412 @@
             white 75%,
             white 100%
           );
-        ">
-      <div class="container pt-5 text-light">
-        <h1 class="">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </h1>
-        <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
-      </div>
-      <div class="container mt-5 text-center text-light">
-        <hr style="border-top: 0.5rem solid black">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 p-2">
-            <div class="card text-bg-dark">
-              <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-              <div class="card-img-overlay bg-black opacity-25"></div>
-              <div class="card-img-overlay">
-                <h1 class="card-header">Placeholder Title</h1>
+        "
+      >
+        <div class="container pt-5 text-light">
+          <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+          <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+          <hr style="border-top: 0.5rem solid black" />
+        </div>
+        <div class="container col-sm-12 col-md-8 mt-5 text-center text-light">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active bg-black rounded-3">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="..."
+                />
+                <div class="carousel-caption d-sm-block">
+                  <h5>First slide label</h5>
+                  <p class="d-none d-md-block">
+                    Some representative placeholder content for the first slide.
+                  </p>
+                  <hr
+                    style="border-top: 0.3rem solid #ffffff"
+                    class="d-none d-md-block"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item bg-black rounded-3">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="..."
+                />
+                <div class="carousel-caption d-sm-block">
+                  <h5>Second slide label</h5>
+                  <p class="d-none d-md-block">
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                  <hr
+                    style="border-top: 0.3rem solid #ffffff"
+                    class="d-none d-md-block"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item bg-black rounded-3">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="..."
+                />
+                <div class="carousel-caption d-sm-block">
+                  <h5>Third slide label</h5>
+                  <p class="d-none d-md-block">
+                    Some representative placeholder content for the third slide.
+                  </p>
+                  <hr
+                    style="border-top: 0.3rem solid #ffffff"
+                    class="d-none d-md-block"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item bg-black rounded-3">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="..."
+                />
+                <div class="carousel-caption d-sm-block">
+                  <h5>Fourth Slide label</h5>
+                  <p class="d-none d-md-block">
+                    Some representative placeholder content for the third slide.
+                  </p>
+                  <hr
+                    style="border-top: 0.3rem solid #ffffff"
+                    class="d-none d-md-block"
+                  />
+                </div>
+              </div>
+              <div class="carousel-item bg-black rounded-3">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="d-block w-100 rounded-3 opacity-75"
+                  alt="..."
+                />
+                <div class="carousel-caption d-sm-block">
+                  <h5>Fifth slide label</h5>
+                  <p class="d-none d-md-block">
+                    Some representative placeholder content for the third slide.
+                  </p>
+                  <hr
+                    style="border-top: 0.3rem solid #ffffff"
+                    class="d-none d-md-block"
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 p-2">
-            <div class="card text-bg-dark">
-              <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-              <div class="card-img-overlay bg-black opacity-25"></div>
-              <div class="card-img-overlay">
-                <h1 class="card-header">Placeholder Title</h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 p-2">
-            <div class="card text-bg-dark">
-              <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-              <div class="card-img-overlay bg-black opacity-25"></div>
-              <div class="card-img-overlay">
-                <h1 class="card-header">Placeholder Title</h1>
-              </div>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 p-2">
-            <div class="card text-bg-dark">
-              <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-              <div class="card-img-overlay bg-black opacity-25"></div>
-              <div class="card-img-overlay">
-                <h1 class="card-header">Placeholder Title</h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 p-2">
-            <div class="card text-bg-dark">
-              <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-              <div class="card-img-overlay bg-black opacity-25"></div>
-              <div class="card-img-overlay">
-                <h1 class="card-header">Placeholder Title</h1>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 p-2">
-            <div class="card text-bg-dark">
-              <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-              <div class="card-img-overlay bg-black opacity-25"></div>
-              <div class="card-img-overlay">
-                <h1 class="card-header">Placeholder Title</h1>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-  </main>
+    </main>
 
-
-  <!--questions container-->
-  <div class="container-fluid mt-5">
-    <div class="container ">
-      <hr style="border-top:0.5rem solid #198754">
-      <h3 class="text-success">Latest</h3>
-      <h1 class="text-black">Get answers to your questions!</h1>
-    </div>
-    <div class="container mt-5">
-      <div class="row align-content-between">
-        <div class="col-xs-12 col-sm-6 p-2">
-          <div class="card text-bg-dark">
-            <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-            <div class="card-img-overlay bg-black opacity-25"></div>
-            <div class="card-img-overlay">
-              <h1 class="card-title text-center">Placeholder Title</h1>
-              <h5 class="card-text ">Subtitle 1</h5>
-              <h4 class="card-text ">Description 1</h4>
-              <h4 class="card-text ">Description 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                ducimus inventore aperiam, consectetur, esse sunt voluptas ut id animi impedit laborum corrupti eligendi
-                neque.</h4>
-              <h3 class="card-footer text-center">Footer</h3>
-            </div>
-          </div>
+    <!--questions container-->
+    <div class="container-fluid mt-5">
+      <div class="container bg-body-secondary rounded-3">
+        <div class="container pt-3">
+          <hr class="opacity-100 rounded-5 border-5 border-success" />
+          <h2 class="text-success">Latest:</h2>
+          <h1 class="text-black">
+            Get <span class="text-success">answers</span> to your
+            <span class="text-success">questions</span>!
+          </h1>
         </div>
-        <div class="col-xs-12 col-sm-6 p-2">
-          <div class="card text-bg-dark">
-            <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-            <div class="card-img-overlay bg-black opacity-25"></div>
-            <div class="card-img-overlay">
-              <h1 class="card-title text-center">Placeholder Title</h1>
-              <h5 class="card-text ">Subtitle 1</h5>
-              <h4 class="card-text ">Description 1</h4>
-              <h4 class="card-text">Description 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                ducimus inventore aperiam, consectetur, esse sunt voluptas ut id animi impedit laborum corrupti eligendi
-                neque.</h4>
-              <h3 class="card-footer text-center">Footer</h3>
+        <div class="container mt-5 align-content-center">
+          <div class="row align-content-between pb-3">
+            <div class="col-sm-12 col-lg-4 p-2">
+              <div class="card text-bg-dark">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+                <div class="card-img-overlay bg-black opacity-25"></div>
+                <div class="card-img-overlay">
+                  <h1 class="card-title text-center">Placeholder Title</h1>
+                  <h5 class="card-text">Subtitle 1</h5>
+                  <h4 class="card-text text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center">Footer</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 p-2">
+              <div class="card text-bg-dark">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+                <div class="card-img-overlay bg-black opacity-25"></div>
+                <div class="card-img-overlay">
+                  <h1 class="card-title text-center">Placeholder Title</h1>
+                  <h5 class="card-text">Subtitle 1</h5>
+                  <h4 class="card-text text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center">Footer</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
       <!--Second questions container-->
-      <div class = " container">
-      <h3 class="pt-5 text-success">Learn more: </h3>
-      <hr style="border-top:0.5rem solid #198754">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 p-2">
-          <div class="card text-bg-dark">
-            <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-            <div class="card-img-overlay bg-black opacity-25"></div>
-            <div class="card-img-overlay">
-              <h1 class="card-title text-center">Placeholder Title</h1>
-              <h4 class="card-text pt-3">Description 1</h4>
-              <h4 class="card-text">Description 2</h4>
-              <h3 class="card-footer text-center">Footer</h3>
+      <div class="container bg-body-secondary mt-5 rounded-3 d-none d-lg-block">
+        <div class="container pt-3">
+          <hr class="opacity-100 rounded-5 border-5 border-success" />
+          <h2><span class="text-success">Learn</span> more:</h2>
+          <h1>
+            See more <span class="text-success">useful</span> articles for:
+          </h1>
+          <div class="row pb-3 mt-5">
+            <div class="col-sm-12 col-lg-4 p-2">
+              <div class="card text-bg-dark">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+                <div class="card-img-overlay bg-black opacity-25"></div>
+                <div class="card-img-overlay">
+                  <h1 class="card-title text-center">Placeholder Title</h1>
+                  <h4 class="card-text pt-3 text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center">Footer</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 p-2">
+              <div class="card text-bg-dark">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+                <div class="card-img-overlay bg-black opacity-25"></div>
+                <div class="card-img-overlay">
+                  <h1 class="card-title text-center">Placeholder Title</h1>
+                  <h4 class="card-text pt-3 text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center">Footer</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4 p-2">
+              <div class="card text-bg-dark">
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+                <div class="card-img-overlay bg-black opacity-25"></div>
+                <div class="card-img-overlay">
+                  <h1 class="card-title text-center">Placeholder Title</h1>
+                  <h4 class="card-text pt-3 text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center">Footer</h3>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4 p-2">
-          <div class="card text-bg-dark">
-            <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-            <div class="card-img-overlay bg-black opacity-25"></div>
-            <div class="card-img-overlay">
-              <h1 class="card-title text-center">Placeholder Title</h1>
-              <h4 class="card-text pt-3">Description 1</h4>
-              <h4 class="card-text">Description 2</h4>
-              <h3 class="card-footer text-center">Footer</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 p-2">
-          <div class="card text-bg-dark">
-            <img src="./main-article-images/image1.jpg" class="card-img" alt="placeholder-alt" />
-            <div class="card-img-overlay bg-black opacity-25"></div>
-            <div class="card-img-overlay">
-              <h1 class="card-title text-center">Placeholder Title</h1>
-              <h4 class="card-text pt-3">Description 1</h4>
-              <h4 class="card-text">Description 2</h4>
-              <h3 class="card-footer text-center">Footer</h3>
+      </div>
+      <div class="container bg-body-secondary mt-5 rounded-3 d-lg-none">
+        <div class="container pt-3">
+          <hr class="opacity-100 rounded-5 border-5 border-success" />
+          <h2><span class="text-success">Learn</span> more:</h2>
+          <h1>
+            See more <span class="text-success">useful</span> articles for:
+          </h1>
+          <div class="row pb-3">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide pb-2 mt-5"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active bg-black rounded-3">
+                  <img
+                    src="./main-article-images/image1.jpg"
+                    class="d-block w-100 rounded-3 opacity-75"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item bg-black rounded-3">
+                  <img
+                    src="./main-article-images/image1.jpg"
+                    class="d-block w-100 rounded-3 opacity-75"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item bg-black rounded-3">
+                  <img
+                    src="./main-article-images/image1.jpg"
+                    class="d-block w-100 rounded-3 opacity-75"
+                    alt="..."
+                  />
+                  <div class="carousel-caption">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
     <!--Contact me container-->
-    <div class = "container mt-5">
-      <h1 class = "text-center">Keep in touch with us!</h1>
-      <hr style="border-top:0.5rem solid #198754">
-      <div class="container text-center bg-success rounded-5">
-        <h4 class="p-3">Enim expedita sequi molestiae quo!</h4>
-        <h1 class="pt-3">Lorem ipsum dolor sit</h1>
-        <h2 class="pb-3">amet consectetur, adipisicing elit.</h2>
-        <button class="btn btn-outline-dark m-3 p-3">Contact us!</button>
+    <div class="container mt-5">
+      <div class="container bg-body-secondary p-5 rounded-3">
+        <h1 class="text-center text-dark text-decoration-underline">
+          Keep in touch with us!
+        </h1>
+        <div
+          class="container text-white text-center bg-success rounded-3 shadow-lg mt-3"
+        >
+          <h4 class="p-3">Enim expedita sequi molestiae quo!</h4>
+          <h1 class="pt-3">Lorem ipsum dolor sit</h1>
+          <h2 class="pb-3">amet consectetur, adipisicing elit.</h2>
+          <button class="btn btn-dark opacity-75 m-3 p-3">Contact us!</button>
+        </div>
       </div>
     </div>
 
     <div class="container-fluid mt-5 bg-dark text-white">
       <div class="row text-center">
         <div class="col p-3 mt-3">
-          <h3>Who we are?</h3>
+          <h3>Who are we?</h3>
         </div>
         <div class="col p-3 mt-3">
           <h3>Latest articles:</h3>
@@ -248,30 +506,32 @@
         </div>
       </div>
 
-      <div class="row p-3">
-        <div class="col mb-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestiae eveniet explicabo necessitatibus
-          commodi natus optio quibusdam facere. Beatae, esse quis laudantium recusandae sed cum inventore magni at ipsam
-          voluptatibus?
+      <div class="row">
+        <div class="col sm-4 mb-5 text-em">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          molestiae eveniet explicabo necessitatibus commodi natus optio
+          quibusdam facere. Beatae, esse quis laudantium recusandae sed cum
+          inventore magni at ipsam voluptatibus?
         </div>
-        <div class="col mb-5  text-decoration-none text-reset">
-          <a href="#">Article 1 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
-          <a href="#">Article 2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
-          <a href="#">Article 3 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
-          <a href="#">Article 4 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
+        <div class="col sm-4 mb-5 text-center">
+          <a href="#" class="text-white">Article 1 - Lorem<br /></a>
+          <a href="#" class="text-white">Article 2 - Lorem<br /></a>
+          <a href="#" class="text-white">Article 3 - Lorem <br /></a>
+          <a href="#" class="text-white">Article 4 - Lorem <br /></a>
         </div>
-        <div class="col mb-5">
-          <a href="#">Link 2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
-          <a href="#">Link 2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
-          <a href="#">Link 3 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
-          <a href="#">Link 4 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br></a>
+        <div class="col sm-4 mb-5 text-center">
+          <a href="#" class="text-white">Link 2 - Lorem <br /></a>
+          <a href="#" class="text-white">Link 2 - Lorem <br /></a>
+          <a href="#" class="text-white">Link 3 - Lorem <br /></a>
+          <a href="#" class="text-white">Link 4 - Lorem <br /></a>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-      </script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
