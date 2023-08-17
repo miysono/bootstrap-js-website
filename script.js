@@ -84,34 +84,33 @@ const secondAnswersContainer = document.querySelector(
 secondAnswersContainer.addEventListener(`mouseover`, function (e) {
   const clicked = e.target.closest(`.second-questions-photo`);
   if (!clicked) return;
-  document.querySelectorAll(`.second-questions-photo`).forEach((photo) => {
+  const photos = document.querySelectorAll(`.second-questions-photo`);
+
+  photos.forEach((photo) => {
     photo.classList.remove(`col-lg-4`);
     photo.classList.remove(`col-lg-3`);
     photo.classList.remove(`col-lg-2`);
   });
-  switch (clicked.dataset.id) {
-    case "0": {
-      document
-        .querySelectorAll(`.second-questions-photo`)
-        .forEach((photo, index) => {
-          photo.classList.add(`col-lg-${4 - index}`);
-        });
-      break;
+
+  //Photos algorithm -> reuse in the future
+  let i = Number(clicked.dataset.id);
+  let left = i;
+  let right = i;
+  let isFinished = false;
+  let counter = 1;
+  let maxValue = 4;
+  photos[i].classList.add(`col-lg-${maxValue}`);
+  while (!isFinished) {
+    if (left > 0) {
+      photos[left - 1].classList.add(`col-lg-${maxValue - counter}`);
+      left--;
     }
-    case "1": {
-      const photo = document.querySelectorAll(`.second-questions-photo`);
-      photo[0].classList.add(`col-lg-2`);
-      photo[1].classList.add(`col-lg-4`);
-      photo[2].classList.add(`col-lg-2`);
-      break;
+    if (right + 1 < photos.length) {
+      photos[right + 1].classList.add(`col-lg-${maxValue - counter}`);
+      right++;
     }
-    case "2": {
-      document
-        .querySelectorAll(`.second-questions-photo`)
-        .forEach((photo, index) => {
-          photo.classList.add(`col-lg-${index + 2}`);
-        });
-      break;
-    }
+    console.log(`right: ${right}`);
+    counter++;
+    if (left === 0 && right === photos.length - 1) isFinished = true;
   }
 });
