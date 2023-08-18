@@ -6,15 +6,13 @@
     <title>The home for ACNE Information</title>
     <script defer src="script.js"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
     />
   </head>
 
   <body class="bg-body-tertiary">
-    <!--Header container-->
+    <!--Navbar-->
     <header>
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary"
@@ -81,6 +79,7 @@
 
     <!--Main container-->
     <main>
+      <!--FIRST SECTION BACKGROUND-->
       <div
         class="container-fluid top-100"
         style="
@@ -93,148 +92,288 @@
           );
         "
       >
+        <!--FIRST SECTION TEXT-CONTENT-->
         <div class="container pt-5 text-light">
           <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
           <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
           <hr style="border-top: 0.5rem solid black" />
         </div>
-        <div class="container col-sm-12 col-md-8 mt-5 text-center text-light">
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
+
+        <!--PHOTOS/SLIDER FIRST SECTION CONTAINER-->
+
+        <!--LARGE-DISPLAY-CONTAINER-->
+        <div class="container d-none d-lg-block mt-5">
+          <div class="row pb-3 mt-5 first-slide-animation-section">
+            <!--PHOTO 1-->
+            <div
+              class="col col-lg-3 p-2 m-auto first-slide-animation-photo"
+              data-id="0"
+            >
+              <div class="card text-bg-dark border-0 rounded-0">
+                <!--Image-->
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy rounded-0"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+
+                <!--OVERLAY DARK-->
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
+
+                <!--OVERLAY-->
+                <div class="card-img-overlay overflow-hidden">
+                  <h2 class="card-title text-center text-truncate">
+                    Placeholder Title
+                  </h2>
+                  <h4 class="card-text text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center text-break">Footer</h3>
+                </div>
+              </div>
+            </div>
+
+            <!--PHOTO 2-->
+            <div
+              class="col col-lg-4 p-2 m-auto first-slide-animation-photo"
+              data-id="1"
+            >
+              <div class="card text-bg-dark border-0 rounded-0">
+                <!--Image-->
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy rounded-0"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+
+                <!--OVERLAY DARK-->
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
+
+                <!--OVERLAY-->
+                <div class="card-img-overlay overflow-hidden">
+                  <h2 class="card-title text-center text-truncate">
+                    Placeholder Title
+                  </h2>
+                  <h4 class="card-text text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center text-break">Footer</h3>
+                </div>
+              </div>
+            </div>
+
+            <!--PHOTO 3-->
+            <div
+              class="col col-lg-3 m-auto p-2 first-slide-animation-photo"
+              data-id="2"
+            >
+              <div class="card text-bg-dark border-0 rounded-0">
+                <!--Image-->
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy rounded-0"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+
+                <!--OVERLAY DARK-->
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
+
+                <!--OVERLAY-->
+                <div class="card-img-overlay overflow-hidden">
+                  <h2 class="card-title text-center text-truncate">
+                    Placeholder Title
+                  </h2>
+                  <h4 class="card-text text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center text-wrap">Footer</h3>
+                </div>
+              </div>
+            </div>
+
+            <!--PHOTO 4-->
+            <div
+              class="col col-lg-2 m-auto p-2 first-slide-animation-photo"
+              data-id="3"
+            >
+              <div class="card text-bg-dark border-0 rounded-0">
+                <!--Image-->
+                <img
+                  src="./main-article-images/image1.jpg"
+                  class="card-img lazy rounded-0"
+                  alt="placeholder-alt"
+                  data-src="./main-article-images/image1full.jpg"
+                />
+
+                <!--OVERLAY DARK-->
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
+
+                <!--OVERLAY-->
+                <div class="card-img-overlay overflow-hidden text-wrap">
+                  <h2 class="card-title text-center text-truncate">
+                    Placeholder Title
+                  </h2>
+                  <h4 class="card-text text-truncate">
+                    Description 1 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h4 class="card-text text-truncate">
+                    Description 2 Lorem ipsum dolor sit amet
+                  </h4>
+                  <h3 class="card-footer text-center text-wrap">Footer</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--SMALL DISPLAY SLIDER-->
+        <div class="container d-block d-lg-none mt-5">
+          <div id="firstSectionCarouselCaptions" class="carousel slide">
+            <!--SLIDER BUTTONS (BOTTOM SIDE)-->
             <div class="carousel-indicators">
+              <!--EACH BUTTON - 1 SLIDE-->
+
               <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstSectionCarouselCaptions"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
+
               <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstSectionCarouselCaptions"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
+
               <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstSectionCarouselCaptions"
                 data-bs-slide-to="2"
-                aria-label="Slide 3"
+                aria-label="Slide 4"
               ></button>
+
               <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstSectionCarouselCaptions"
                 data-bs-slide-to="3"
                 aria-label="Slide 4"
               ></button>
+
               <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#firstSectionCarouselCaptions"
                 data-bs-slide-to="4"
                 aria-label="Slide 5"
               ></button>
             </div>
+
+            <!--INNER SLIDE COMPONENTS-->
             <div class="carousel-inner">
-              <div class="carousel-item active bg-black "><a href ="#" class ="text-light text-decoration-none">
+              <!--SLIDES-->
+              <!--1-->
+              <div class="carousel-item bg-black active">
                 <img
                   src="./main-article-images/image1.jpg"
-                  class="d-block w-100  opacity-75"
-                  alt="..."
+                  class="d-block w-100 opacity-75 lazy"
+                  data-src="./main-article-images/image1full.jpg"
+                  alt="placeholder-alt"
                 />
-                <div class="carousel-caption d-sm-block">
-                  <h5>First slide label</h5>
-                  <p class="d-none d-md-block">
-                    Some representative placeholder content for the first slide.
+                <div class="carousel-caption d-block">
+                  <h5>First slide title</h5>
+                  <p class="text-truncate">
+                    Representative placeholder content for slider
                   </p>
-                  <hr
-                    style="border-top: 0.3rem solid #ffffff"
-                    class="d-none d-md-block"
-                  />
-                </a>
                 </div>
               </div>
-              <div class="carousel-item bg-black "><a href ="#" class ="text-light text-decoration-none">
+
+              <!--2-->
+              <div class="carousel-item bg-black">
                 <img
                   src="./main-article-images/image1.jpg"
-                  class="d-block w-100  opacity-75"
-                  alt="..."
+                  class="d-block w-100 opacity-75 lazy"
+                  data-src="./main-article-images/image1full.jpg"
+                  alt="placeholder-alt"
                 />
-                <div class="carousel-caption d-sm-block">
-                  <h5>Second slide label</h5>
-                  <p class="d-none d-md-block">
-                    Some representative placeholder content for the second
-                    slide.
+                <div class="carousel-caption d-block">
+                  <h5>Second slide title</h5>
+                  <p class="text-truncate">
+                    Representative placeholder content for slider
                   </p>
-                  <hr
-                    style="border-top: 0.3rem solid #ffffff"
-                    class="d-none d-md-block"
-                  />
                 </div>
-              </a>
               </div>
-              <div class="carousel-item bg-black"> <a href ="#" class ="text-light text-decoration-none">
+
+              <!--3-->
+              <div class="carousel-item bg-black">
                 <img
                   src="./main-article-images/image1.jpg"
-                  class="d-block w-100 opacity-75"
-                  alt="..."
+                  class="d-block w-100 opacity-75 lazy"
+                  data-src="./main-article-images/image1full.jpg"
+                  alt="placeholder-alt"
                 />
-                <div class="carousel-caption d-sm-block">
-                  <h5>Third slide label</h5>
-                  <p class="d-none d-md-block">
-                    Some representative placeholder content for the third slide.
+                <div class="carousel-caption d-block">
+                  <h5>Third slide title</h5>
+                  <p class="text-truncate">
+                    Representative placeholder content for slider
                   </p>
-                  <hr
-                    style="border-top: 0.3rem solid #ffffff"
-                    class="d-none d-md-block"
-                  />
                 </div>
-              </a>
               </div>
-              <div class="carousel-item bg-black"><a href ="#" class ="text-light text-decoration-none">
+
+              <!--4-->
+              <div class="carousel-item bg-black">
                 <img
                   src="./main-article-images/image1.jpg"
-                  class="d-block w-100 opacity-75"
-                  alt="..."
+                  class="d-block w-100 opacity-75 lazy"
+                  data-src="./main-article-images/image1full.jpg"
+                  alt="placeholder-alt"
                 />
-                <div class="carousel-caption d-sm-block">
-                  <h5>Fourth Slide label</h5>
-                  <p class="d-none d-md-block">
-                    Some representative placeholder content for the third slide.
+                <div class="carousel-caption d-block">
+                  <h5>Fourth slide title</h5>
+                  <p class="text-truncate">
+                    Representative placeholder content for slider
                   </p>
-                  <hr
-                    style="border-top: 0.3rem solid #ffffff"
-                    class="d-none d-md-block"
-                  />
                 </div>
-              </a>
               </div>
-              <div class="carousel-item bg-black" > <a href ="#" class ="text-light text-decoration-none">
+
+              <!--5-->
+              <div class="carousel-item bg-black">
                 <img
                   src="./main-article-images/image1.jpg"
-                  class="d-block w-100 opacity-75"
-                  alt="..."
+                  class="d-block w-100 opacity-75 lazy"
+                  data-src="./main-article-images/image1full.jpg"
+                  alt="placeholder-alt"
                 />
-                <div class="carousel-caption d-sm-block">
-                  <h5>Fifth slide label</h5>
-                  <p class="d-none d-md-block">
-                    Some representative placeholder content for the third slide.
+                <div class="carousel-caption d-block">
+                  <h5>Fifth slide title</h5>
+                  <p class="text-truncate">
+                    Representative placeholder content for slider
                   </p>
-                  <hr
-                    style="border-top: 0.3rem solid #ffffff"
-                    class="d-none d-md-block"
-                  />
                 </div>
-              </a>
               </div>
             </div>
+            <!--SLIDER BUTTONS (LEFT & RIGHT)-->
+            <!--Left-->
             <button
               class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#firstSectionCarouselCaptions"
               data-bs-slide="prev"
             >
               <span
@@ -243,10 +382,11 @@
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
+
+            <!--Right-->
             <button
               class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
+              data-bs-target="#firstSectionCarouselCaptions"
               data-bs-slide="next"
             >
               <span
@@ -262,7 +402,9 @@
 
     <!--questions container-->
     <div class="container-fluid mt-5">
-      <div class="container bg-body-secondary section-container question-section">
+      <div
+        class="container bg-body-secondary section-container question-section"
+      >
         <div class="container pt-3">
           <hr class="opacity-100 rounded-5 border-5 border-success" />
           <h2 class="text-success">Latest:</h2>
@@ -273,7 +415,10 @@
         </div>
         <div class="container mt-5">
           <div class="row align-content-between pb-3">
-            <div class="col-sm-12 col-lg-6 p-2 m-auto questions-photo" data-id = "0">
+            <div
+              class="col-sm-12 col-lg-6 p-2 m-auto questions-photo"
+              data-id="0"
+            >
               <div class="card text-bg-dark border-0 rounded-0">
                 <img
                   src="./main-article-images/image1.jpg"
@@ -281,7 +426,9 @@
                   alt="placeholder-alt"
                   data-src="./main-article-images/image1full.jpg"
                 />
-                <div class="card-img-overlay bg-black opacity-25 rounded-0"></div>
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
                 <div class="card-img-overlay">
                   <h1 class="card-title text-center">Placeholder Title</h1>
                   <h5 class="card-text">Subtitle 1</h5>
@@ -295,7 +442,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-5 p-2 m-auto questions-photo" data-id = "1">
+            <div
+              class="col-sm-12 col-lg-5 p-2 m-auto questions-photo"
+              data-id="1"
+            >
               <div class="card text-bg-dark border-0 rounded-0">
                 <img
                   src="./main-article-images/image1.jpg"
@@ -303,8 +453,10 @@
                   alt="placeholder-alt"
                   data-src="./main-article-images/image1full.jpg"
                 />
-                <div class="card-img-overlay bg-black opacity-25 rounded-0"></div>
-                <div class="card-img-overlay">
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
+                <div class="card-img-overlay overflow-hidden">
                   <h1 class="card-title text-center">Placeholder Title</h1>
                   <h5 class="card-text">Subtitle 1</h5>
                   <h4 class="card-text text-truncate">
@@ -321,7 +473,9 @@
         </div>
       </div>
       <!--Second questions container-->
-      <div class="container bg-body-secondary mt-5 d-none d-lg-block section-container second-question-section">
+      <div
+        class="container bg-body-secondary mt-5 d-none d-lg-block section-container second-slide-animation-section"
+      >
         <div class="container pt-3">
           <hr class="opacity-100 rounded-5 border-5 border-success" />
           <h2><span class="text-success">Learn</span> more:</h2>
@@ -329,7 +483,10 @@
             See more <span class="text-success">useful</span> articles for:
           </h1>
           <div class="row pb-3 mt-5">
-            <div class="col-sm-12 col-lg-4 p-2 m-auto second-questions-photo" data-id="0">
+            <div
+              class="col-sm-12 col-lg-4 p-2 m-auto second-slide-animation-photo"
+              data-id="0"
+            >
               <div class="card text-bg-dark border-0 rounded-0">
                 <img
                   src="./main-article-images/image1.jpg"
@@ -339,7 +496,7 @@
                 />
                 <div class="card-img-overlay bg-black opacity-25"></div>
                 <div class="card-img-overlay overflow-hidden">
-                  <h1 class="card-title text-center ">Placeholder Title</h1>
+                  <h1 class="card-title text-center">Placeholder Title</h1>
                   <h4 class="card-text pt-3 text-truncate">
                     Description 1 Lorem ipsum dolor sit amet
                   </h4>
@@ -350,7 +507,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-3 p-2 m-auto second-questions-photo" data-id="1">
+            <div
+              class="col-sm-12 col-lg-3 p-2 m-auto second-slide-animation-photo"
+              data-id="1"
+            >
               <div class="card text-bg-dark border-0 rounded-0">
                 <img
                   src="./main-article-images/image1.jpg"
@@ -358,10 +518,14 @@
                   alt="placeholder-alt"
                   data-src="./main-article-images/image1full.jpg"
                 />
-                <div class="card-img-overlay bg-black opacity-25 rounded-0"></div>
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
                 <div class="card-img-overlay overflow-hidden">
-                  <h1 class="card-title text-center text-truncate">Placeholder Title</h1>
-                  <h4 class="card-text pt-3 text-truncate">
+                  <h1 class="card-title text-center text-truncate">
+                    Placeholder Title
+                  </h1>
+                  <h4 class="card-text text-truncate">
                     Description 1 Lorem ipsum dolor sit amet
                   </h4>
                   <h4 class="card-text text-truncate">
@@ -371,7 +535,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-3 p-2 m-auto second-questions-photo" data-id ="2">
+            <div
+              class="col-sm-12 col-lg-2 p-2 m-auto second-slide-animation-photo"
+              data-id="2"
+            >
               <div class="card text-bg-dark border-0 rounded-0">
                 <img
                   src="./main-article-images/image1.jpg"
@@ -379,7 +546,9 @@
                   alt="placeholder-alt"
                   data-src="./main-article-images/image1full.jpg"
                 />
-                <div class="card-img-overlay bg-black opacity-25 rounded-0"></div>
+                <div
+                  class="card-img-overlay bg-black opacity-25 rounded-0"
+                ></div>
                 <div class="card-img-overlay overflow-hidden">
                   <h1 class="card-title text-center">Placeholder Title</h1>
                   <h4 class="card-text pt-3 text-truncate">
@@ -395,7 +564,9 @@
           </div>
         </div>
       </div>
-      <div class="container bg-body-secondary mt-5 rounded-3 d-lg-none section-container">
+      <div
+        class="container bg-body-secondary mt-5 rounded-3 d-lg-none section-container"
+      >
         <div class="container pt-3">
           <hr class="opacity-100 rounded-5 border-5 border-success" />
           <h2><span class="text-success">Learn</span> more:</h2>
@@ -483,51 +654,89 @@
     </div>
     <!--Contact me container-->
     <div class="container mt-5">
-      <div class="container bg-body-secondary p-5 rounded-3 section-container contact-container">
+      <div
+        class="container bg-body-secondary p-5 rounded-3 section-container contact-container"
+      >
         <h1 class="text-center text-dark text-decoration-underline">
           Keep in touch with us!
         </h1>
-        <div
-          class="container text-white text-center bg-success shadow-lg mt-3"
-        >
+        <div class="container text-white text-center bg-success shadow-lg mt-3">
           <h4 class="p-3">Enim expedita sequi molestiae quo!</h4>
           <h1 class="pt-3">Lorem ipsum dolor sit</h1>
           <h2 class="pb-3">amet consectetur, adipisicing elit.</h2>
-          <button class="btn btn-dark opacity-75 m-3 p-3 contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">Contact us!</button>
+          <button
+            class="btn btn-dark opacity-75 m-3 p-3 contact-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            Contact us!
+          </button>
         </div>
       </div>
-      <div class="alert alert-success rounded-0" role="alert">
+      <div
+        class="alert alert-success rounded-0 succesful-send-alert d-none"
+        role="alert"
+      >
         Mail sent succesfully!
       </div>
     </div>
-    
+
     <!-- modal window -->
-    <div class="modal fade modal-container" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="false">
-      <div class="modal-dialog modal-dialog-centered " role="document">
+    <div
+      class="modal fade modal-container"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-hidden="false"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modal-title">Send Email</h5>
-            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum porro aperiam, voluptatem tempora nulla eveniet ullam, quasi esse, qui veniam eum architecto inventore ea suscipit non eos? Vero, debitis rerum?</p>
-            <label for ="modal-email" class="form-label">Your email adress:</label>
-            <input type = "text" class = "form-control" id ="modal-email" placeholder = "example: ex@mail.com">
-            <div class="form-group">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+              porro aperiam, voluptatem tempora nulla eveniet ullam, quasi esse,
+              qui veniam eum architecto inventore ea suscipit non eos? Vero,
+              debitis rerum?
+            </p>
+            <div class="p-2 rounded-3">
+              <label for="modal-email" class="form-label"
+                >Your email adress:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="modal-email"
+                placeholder="example: ex@mail.com"
+              />
+            </div>
+            <div class="form-group p-2 rounded-3 mt-2">
               <label for="message-text" class="col-form-label">Message:</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-success btn-modal-send">Send</button>
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-success btn-modal-send">
+              Send
+            </button>
           </div>
         </div>
       </div>
     </div>
-    
 
     <div class="container-fluid mt-5 bg-dark text-white">
       <div class="row text-center">
@@ -564,12 +773,6 @@
       </div>
     </div>
 
-    
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
