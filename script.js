@@ -1,5 +1,6 @@
 "use strict";
 
+//INITIALISER
 const init = function () {
   //navbar observer
   const navbar = document.querySelector(`header`);
@@ -49,8 +50,6 @@ const init = function () {
     sectionObserver.observe(section);
   });
 };
-
-init();
 
 //SLIDER ANIMATION FUNCTIONALITY
 //NICE TO ADD -> Change them automatically if the user is not touching them for at least 2 seconds.
@@ -104,82 +103,104 @@ const sliderAnimationFunc = (sectionClass, photoClass, maxValue) => {
   });
 };
 
+//get answers to your questions animation
+//Nice to add -> when section is revealed automaticly change the active one
+const answersContainerFunc = () => {
+  const answersContainer = document.querySelector(`.question-section`);
+  answersContainer.addEventListener(`mouseover`, function (e) {
+    const clicked = e.target.closest(`.questions-photo`);
+    if (!clicked) return;
+    document.querySelectorAll(`.questions-photo`).forEach((photo) => {
+      photo.classList.remove(`col-lg-6`);
+      photo.classList.add(`col-lg-5`);
+    });
+    clicked.classList.add(`col-lg-6`);
+    clicked.classList.remove(`col-lg-5`);
+  });
+};
+
+//MODAL FUNCTIONALITY
+const contactModalFunctionality = () => {
+  //get the modal components
+  const contactMeModal = document.querySelector(`.modal-container`);
+  //get the  modal inputs to be able to reset in the second listner
+  let contactEmail = contactMeModal.querySelector(`#modal-email`);
+  let contactMessage = contactMeModal.querySelector(`#message-text`);
+
+  //send event listener
+  contactMeModal.addEventListener(`click`, function (e) {
+    if (e.target.closest(`.btn-modal-send`)) {
+      //get access to bootstrap modal functions.
+      const bootstrapModal =
+        bootstrap.Modal.getOrCreateInstance(contactMeModal);
+
+      //check for invalid input: We have 2 cases.
+      let invalidEmail = false;
+      let invalidMessage = false;
+      //1. Invalid mail
+      if (!contactEmail.value.includes("@")) invalidEmail = true;
+      //2. Invalid text (<=10 characters)
+      if (contactMessage.value.length < 10) invalidMessage = true;
+      //If both are valid -> hide
+      if (!invalidEmail && !invalidMessage) {
+        document
+          .querySelector(`.succesful-send-alert`)
+          .classList.remove(`d-none`);
+        bootstrapModal.hide();
+      }
+      //Else show error message -> change things
+      else {
+        if (invalidEmail) {
+          prepareInvalidOutput(
+            contactEmail,
+            "Invalid mail. e.g: example@mail.com"
+          );
+        }
+        if (invalidMessage) {
+          prepareInvalidOutput(
+            contactMessage,
+            "Invalid message! Message must be at least 10 characters long!"
+          );
+        }
+      }
+    }
+  });
+
+  //reset the modal values
+  const resetValues = (container, placeholderMessage) => {
+    container.classList.remove(`invalid`);
+    container.parentElement.classList.remove(`parent-invalid`);
+    container.value = "";
+    container.setAttribute(`placeholder`, placeholderMessage);
+  };
+
+  //delete values when exiting the modal
+  contactMeModal.addEventListener(`hide.bs.modal`, function () {
+    resetValues(contactMessage, "");
+    resetValues(contactEmail, "e.g: example@mail.com");
+  });
+
+  //checks for invalid output
+  function prepareInvalidOutput(container, invalidOutputMessage) {
+    container.classList.add(`invalid`);
+    container.parentElement.classList.add(`parent-invalid`);
+    container.value = "";
+    container.setAttribute(`placeholder`, invalidOutputMessage);
+  }
+};
+
+//functions calling
+
+init();
 sliderAnimationFunc(
   "first-slide-animation-section",
   "first-slide-animation-photo",
   4
 );
+answersContainerFunc();
 sliderAnimationFunc(
   "second-slide-animation-section",
   "second-slide-animation-photo",
   4
 );
-
-//get answers to your questions animation
-//Nice to add -> when section is revealed automaticly change the active one
-const answersContainer = document.querySelector(`.question-section`);
-answersContainer.addEventListener(`mouseover`, function (e) {
-  const clicked = e.target.closest(`.questions-photo`);
-  if (!clicked) return;
-  document.querySelectorAll(`.questions-photo`).forEach((photo) => {
-    photo.classList.remove(`col-lg-6`);
-    photo.classList.add(`col-lg-5`);
-  });
-  clicked.classList.add(`col-lg-6`);
-  clicked.classList.remove(`col-lg-5`);
-});
-
-//WHAT TO NEXT
-//ADD CONTACT US FUNCTIONALITY -> WHEN SEND PRESSED CLOSE THE MODAL AND DISPLAY THE MESSAGE
-//AND ALSO SEND EMAIL IF POSSIBLE.
-const contactMeModal = document.querySelector(`.modal-container`);
-contactMeModal.addEventListener(`click`, function (e) {
-  console.log(`i clicked on the modal`);
-  if (e.target.closest(`.btn-modal-send`)) {
-    //get access to bootstrap modal functions.
-    const bootstrapModal = bootstrap.Modal.getOrCreateInstance(contactMeModal);
-
-    //check for invalid input: We have 2 cases.
-    let invalidEmail = false;
-    let invalidMessage = false;
-    let contactEmail = contactMeModal.querySelector(`#modal-email`);
-    let contactMessage = contactMeModal.querySelector(`#message-text`);
-    //1. Invalid mail
-    if (!contactEmail.value.includes("@")) invalidEmail = true;
-    //2. Invalid text (<=10 characters)
-    if (contactMessage.value.length < 10) invalidMessage = true;
-    //If both are valid -> hide
-    if (!invalidEmail && !invalidMessage) {
-      document
-        .querySelector(`.succesful-send-alert`)
-        .classList.remove(`d-none`);
-      bootstrapModal.hide();
-      contactMessage.value = "";
-      contactEmail.value = "";
-    }
-    //Else show error message -> change things
-    else {
-      if (invalidEmail) {
-        contactEmail.style.backgroundColor = "var(--bs-danger)";
-        contactEmail.parentElement.style.backgroundColor =
-          "var(--bs-danger-bg-subtle)";
-        contactEmail.value = "";
-        contactEmail.setAttribute(
-          `placeholder`,
-          "Invalid email! e.g: example@mail.com"
-        );
-      }
-      if (invalidMessage) {
-        contactMessage.style.backgroundColor = "var(--bs-danger)";
-        contactMessage.parentElement.style.backgroundColor =
-          "var(--bs-danger-bg-subtle)";
-        contactMessage.value = "";
-        contactMessage.setAttribute(
-          `placeholder`,
-          "Message must be 10 characters long!"
-        );
-      }
-    }
-  }
-  //also delete content when pressed on x/close/etc.
-});
+contactModalFunctionality();
